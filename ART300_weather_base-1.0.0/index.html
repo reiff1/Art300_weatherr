@@ -26,6 +26,9 @@
     </head>
 
     <body>
+
+
+        
         <div>
             <div class="currentinfo">
                 <div class="current">
@@ -34,19 +37,16 @@
                         <img src="/image/sunicon1.png" alt="sun1">
                     </div>
                 </div>
-                <div class="custominfo">
-                    <div class="datetime">Monday, October 14th   9:48 PM</div>
-                    <div class="searchbar">
-                        <div class="text">Find your location...</div>
-                        <div class="searchbutton">
-                            <div class="text1">GO</div>
-                        </div>
-                    </div>
-                    <div class="manhattan">
-                        <p>Manhattan, Kansas 66502</p>
-                        <p1>current location</p1>
-                        <p2>39.1836° N, 96.5717° W</p2>
-                    </div>
+                <div class="datetime">Monday, October 14th   9:48 PM</div>
+                <div class="searchbar">
+                    <input placeholder="Enter Your ZIP Code" v-on:input="ziptest" name="name" id="zip"/>
+                </div>
+                <div class="locationinfo">
+                    <p>Manhattan, Kansas 66502</p>
+                </div>
+                <div class="coordinates">
+                    <p1>current location</p1>
+                    <p2>39.1836° N, 96.5717° W</p2>
                 </div>
             </div>
         </div>
@@ -55,7 +55,6 @@
             <div>-Light showers expected this evening.</div>
             <div><br>- Hurricane Nestor to hit east coast by tomorrow evening.</div>
         </div>
-
 
 
 
@@ -139,8 +138,8 @@
 
 
 
-
+         -->
         <script src="/js/script.js" type="module"></script>
-        -->
+       
     </body>
 </html>

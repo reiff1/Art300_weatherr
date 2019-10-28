@@ -39,7 +39,7 @@ body{
 }
 .icon1{
     position: relative;
-    margin-left: 90px;
+    margin-left: 90px
 }
 .custominfo{
     width: 375px;
@@ -54,59 +54,57 @@ body{
     font-weight: 700;
     font-style: normal;
     font-size: 12px;
-    margin-left:100px;
+    margin-left:1423px;
 }
-.searchbar{
-    width: 348px;
-    height: 42px;
+#zip{
+    width: 250px;
     border-radius: 85px;
-    outline-width: 2px;
-    border: 2px solid #ffffff;
-    position: absolute;
-}
-.text{
-    color: white;
+    color: 000000;
     font-family: mr-eaves-modern, sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 16px;
-    margin-top: 12px;
-    margin-left: 16px;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 1175px;
+    position: absolute;
 }
-.searchbutton{
-    width: 64px;
-    height: 25px;
-    background-color: white;
-    border-radius: 85px;
-    margin-left: 277px;
-    position: relative;
-}
-.manhattan{
-    width: 250px;
-    height: 46px;
-    margin-top: 71px;
-    margin-left: 107px;
-    background-color: orange;
+.locationinfo{
+    width: 225px;
+    height: 32px;
+    margin-top: 20px;
+    margin-left: 1375px;
+    position: absolute;
 }
 p{
     font-family: source-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
 }
+.coordinates{
+    width: 225px;
+    height: 12px;
+    position: relative;
+    margin-left: 1375px;
+    margin-top: 52px;
+}
 p1{
+    width: auto;
+    height: 17px;
     font-family: mr-eaves-modern, sans-serif;
     font-weight: 300;
     font-style: normal;
     color: white;
     font-size: 9px;
+    margin-left: 3px;
 }
 p2{
     font-family: source-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 10x;
+    margin-left: 15px;
 }
 .dailyalerts{
     width: 258px;
