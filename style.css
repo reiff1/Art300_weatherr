@@ -106,12 +106,17 @@ p2{
     font-size: 10x;
     margin-left: 15px;
 }
+.topsection{
+    width: 1237px;
+    height: auto;
+}
 .dailyalerts{
     width: 258px;
     height: 228px;
     background-color: #02879A;
     border-radius: 25px;
     margin-left: 86px;
+    position: absolute;
 }
 p5{
     font-family: source-sans-pro, sans-serif;
@@ -130,4 +135,29 @@ div{
     font-size: 9px;
     margin-left: 16px;
     letter-spacing:1px;
+
+}
+.yourweek{
+    width: auto;
+    height: auto;
+    margin-left: 358px;s
+}
+.h1{
+    color: white;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+}
+.containers{
+    height: 240px;
+    width: 66%;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 125px 125px 125px 125px;
+    grid-template-rows: 219px;
+    grid-column-gap: 25px;
+    margin-left: 345px;
+}
+.ataglance{
 }
