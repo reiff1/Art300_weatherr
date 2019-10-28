@@ -39,7 +39,7 @@ body{
 }
 .icon1{
     position: relative;
-    margin-left: 77px;
+    margin-left: 90px;
 }
 .custominfo{
     width: 375px;
@@ -103,17 +103,16 @@ p1{
     font-size: 9px;
 }
 p2{
-    ont-family: source-sans-pro, sans-serif;
+    font-family: source-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 10x;
 }
 .dailyalerts{
     width: 258px;
-    height: 152px;
+    height: 228px;
     background-color: #02879A;
     border-radius: 25px;
-    margin-top: 36px;
     margin-left: 86px;
 }
 p5{
@@ -123,6 +122,14 @@ p5{
     font-size: 21px;
     color: white;
     margin-top: 40px;
-    margin-left: 57px;
-    
+    margin-left: 57px;   
+}
+div{
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 9px;
+    margin-left: 16px;
+    letter-spacing:1px;
 }
