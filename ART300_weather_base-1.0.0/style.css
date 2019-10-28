@@ -1,0 +1,24 @@
+
+.degree_symbol:not(:empty)::after {
+    content: "°"
+}
+
+.owm-legend-item{
+    display: none;
+}
+
+#map {
+	width: 600px;
+    height: 600px;
+}
+body{
+    background-image: url(image/background-image.jpg);
+    width: auto;
+    height: auto;
+}
+.currentinfo{
+    width: 152px;
+    height: 63;
+    background-color: green;
+    
+}

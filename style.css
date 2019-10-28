@@ -1,0 +1,127 @@
+
+.degree_symbol:not(:empty)::after {
+    content: "°"
+}
+
+.owm-legend-item{
+    display: none;
+}
+
+#map {
+	width: 600px;
+    height: 600px;
+}
+body{
+    background-image: url(image/background-image.jpg);
+    width: auto;
+    height: auto;
+}
+
+.currentinfo{
+    width: 1680px;
+    height: 129px;
+    margin-top: 23px;
+    text-align: left;
+}
+.current{
+    width: 134px;
+    height: 63px;
+    margin-left: 56px;
+    float: left;
+}
+.temp{
+    color: white;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 47px;
+    position: absolute;
+}
+.icon1{
+    position: relative;
+    margin-left: 77px;
+}
+.custominfo{
+    width: 375px;
+    height: 104px;
+    position: relative;
+    margin-left: 1116px;
+    color: white;
+}
+.datetime{
+    color: white;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    margin-left:100px;
+}
+.searchbar{
+    width: 348px;
+    height: 42px;
+    border-radius: 85px;
+    outline-width: 2px;
+    border: 2px solid #ffffff;
+    position: absolute;
+}
+.text{
+    color: white;
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-left: 16px;
+}
+.searchbutton{
+    width: 64px;
+    height: 25px;
+    background-color: white;
+    border-radius: 85px;
+    margin-left: 277px;
+    position: relative;
+}
+.manhattan{
+    width: 250px;
+    height: 46px;
+    margin-top: 71px;
+    margin-left: 107px;
+    background-color: orange;
+}
+p{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+p1{
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    font-size: 9px;
+}
+p2{
+    ont-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10x;
+}
+.dailyalerts{
+    width: 258px;
+    height: 152px;
+    background-color: #02879A;
+    border-radius: 25px;
+    margin-top: 36px;
+    margin-left: 86px;
+}
+p5{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 21px;
+    color: white;
+    margin-top: 40px;
+    margin-left: 57px;
+}
