@@ -149,18 +149,38 @@ div{
     font-style: normal;
     font-size: 50px;
 }
-.containers{
-    height: 240px;
-    width: 865px;
-    margin-left: 350px;
-    background-color: green;
-    position: absolute;
-}
 .ataglance{
+    margin-left: 358px;
     border-radius: 30px;
     display: grid;
     grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
     grid-template-rows: 219px;
-    background-color: white;
-    position: relative;
+    grid-row-gap: 17px;
+    background-color: purple;
+    position: absolute;
+}
+.weekday{
+    color: green;
+    margin-top: 23px;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+}
+.dailyicon{
+    width: 54px;
+    height: 54px;
+    align-content: center;
+    margin-top: 23px;
+}
+.suncloud{
+    width: 65px;
+    height: 49px;
+}
+.temp{
+    margin-top: 23px;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
 }
