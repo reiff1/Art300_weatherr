@@ -151,13 +151,16 @@ div{
 }
 .containers{
     height: 240px;
-    width: 66%;
-    border-radius: 30px;
-    display: grid;
-    grid-template-columns: 125px 125px 125px 125px;
-    grid-template-rows: 219px;
-    grid-column-gap: 25px;
-    margin-left: 345px;
+    width: 865px;
+    margin-left: 350px;
+    background-color: green;
+    position: absolute;
 }
 .ataglance{
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
+    grid-template-rows: 219px;
+    background-color: white;
+    position: relative;
 }
