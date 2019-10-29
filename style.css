@@ -155,12 +155,10 @@ div{
     display: grid;
     grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
     grid-template-rows: 219px;
-    grid-row-gap: 17px;
-    background-color: purple;
+    grid-column-gap: 17px;
     position: absolute;
 }
 .weekday{
-    color: green;
     margin-top: 23px;
     font-family: source-sans-pro, sans-serif;
     font-weight: 600;
