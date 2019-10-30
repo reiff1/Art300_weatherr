@@ -1,4 +1,12 @@
 
+body, html{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    overflow-x: hidden;
+
+}
 .degree_symbol:not(:empty)::after {
     content: "°"
 }
@@ -12,7 +20,10 @@
     height: 600px;
 }
 body{
+    
     background-image: url(image/background-image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: auto;
     height: auto;
 }
@@ -106,27 +117,36 @@ p2{
     font-size: 10x;
     margin-left: 15px;
 }
-.topsection{
-    width: 1237px;
+.yourweek{
+    width: auto;
     height: auto;
+    margin-left: 540px;
+}
+.firstsection{
+    display: grid;
+    grid-template: none;
+    grid-template-columns: 228px 930px;
+    grid-template-rows: 228px;
+    grid-column-gap: 50px;
+    margin-left: 239px;
+    margin-top: 0px;
+    border-radius: 35px;
 }
 .dailyalerts{
     width: 258px;
     height: 219px;
     background-color: #02879A;
     border-radius: 25px;
-    margin-left: 86px;
-    position: absolute;
+    margin-top: 1px;
 }
-p5{
-    height: 
+.titles{
     font-family: source-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 21px;
+    font-size: 18px;
     color: white;
-    margin-top: 40px;
     margin-left: 57px;   
+    margin-top: 10px;
 }
 div{
     font-family: mr-eaves-modern, sans-serif;
@@ -135,31 +155,22 @@ div{
     color: white;
     font-size: 9px;
     margin-left: 16px;
+    margin-top: 10px;
     letter-spacing:1px;
-
-}
-.yourweek{
-    width: auto;
-    height: auto;
-    margin-left: 358px;s
-}
-.h1{
-    color: white;
-    font-family: source-sans-pro, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 50px;
 }
 .ataglance{
-    margin-left: 345px;
-    border-radius: 30px;
     display: grid;
-    grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
-    grid-template-rows: 219px;
-    background-color: #78B9C5;
+    grid-template: none;
+    grid-template-columns: 130px 130px 130px 130px 130px 130px 130px;
+    grid-template-rows: 228px;
+    margin-top: 0px;
+    border-radius: 35px;
+    background-color: #78B6C5;
 }
 .day{
-    margin-top: 24px;
+    height: 10px;
+    width: 30px;
+    margin-top: 15px;
     font-family: source-sans-pro, sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -168,8 +179,8 @@ div{
 .dailyicon{
     width: 54px;
     height: 54px;
-    align-content: center;
     margin-top: 23px;
+    margin-left: 20px;
 }
 .suncloud{
     width: 65px;
@@ -196,13 +207,12 @@ div{
 }
 .currents{
     width: auto;
-    height: auto;
-    margin-left: 328px;
+    margin-left: 300px;
     margin-top: 53px;
-    
 
 }
 .dates{
+    width: auto;
     font-family: source-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -215,9 +225,10 @@ div{
 .left{
     width: 202px;
     height: 154px;
-    margin-left: 357px;
+    margin-left: 320px;
     background-color: green;
     border-radius: 25px;
+    align-content: left;
 }
 .actualtemp{
     width: auto;
@@ -228,6 +239,9 @@ div{
     font-size: 10px;
     color: white;
     letter-spacing: 0px;
+    position: absolute;
+    margin-top: 20px;
+
 }
 .hightemps{
     font-family: source-sans-pro, sans-serif;
@@ -236,22 +250,23 @@ div{
     font-size: 10px;
     color: white;
     letter-spacing: 0px;
+    margin-left: 115px;
+    padding-top: 20px;
 }
 .number1{
     font-family: source-sans-pro, sans-serif;
     font-weight: 800;
     font-style: normal;
     font-size: 40px;
-    margin-top: 12px;
     position: absolute;
+    align-content: top;
 }
 .number2{
     font-family: source-sans-pro, sans-serif;
     font-weight: 800;
     font-style: normal;
     font-size: 40px;
-    margin-top: 12px;
-    margin-left: 100px;
+    margin-left: 115px;
     position: relative;
 }
 .feelslike{
@@ -276,7 +291,7 @@ div{
     text-align: left;
     letter-spacing:  0px;
     margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 115px;
     position: relative;
 }
 .number3{
@@ -291,15 +306,48 @@ div{
     font-weight: 800;
     font-style: normal;
     font-size: 40px;
-    margin-left: 100px;
+    margin-left: 115px;
     position: relative;
 
 }
 .descriptday{
     color: white;
     font-family: source-sans-pro, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-style: normal;
     font-size: 12px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+.evening{
+    width: 265px;
+    height: 122px;
+    background-color: green;
+    border-radius: 25px;
+    margin-left: 0px;
+    position: absolute;
+}
+.tonight{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 10px;
+    position: relative;
+    margin-top: 15px;
+}
+.highlow{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 36px;
+    position: absolute;
+    margin-top: 15px;
+}
+.nighticon{
+    margin-left: 175px;
+    margin-top: 10px;
+}
+.eveningde{
+
 }
