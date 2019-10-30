@@ -112,13 +112,14 @@ p2{
 }
 .dailyalerts{
     width: 258px;
-    height: 228px;
+    height: 219px;
     background-color: #02879A;
     border-radius: 25px;
     margin-left: 86px;
     position: absolute;
 }
 p5{
+    height: 
     font-family: source-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -150,16 +151,15 @@ div{
     font-size: 50px;
 }
 .ataglance{
-    margin-left: 358px;
+    margin-left: 345px;
     border-radius: 30px;
     display: grid;
     grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
     grid-template-rows: 219px;
-    grid-column-gap: 17px;
-    position: absolute;
+    background-color: #78B9C5;
 }
-.weekday{
-    margin-top: 23px;
+.day{
+    margin-top: 24px;
     font-family: source-sans-pro, sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -180,5 +180,126 @@ div{
     font-family: source-sans-pro, sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 15px;
+    font-size: 18px;
+    position: absolute;
+}
+.precip{
+    width: 80px;
+    height: 27px;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 60px;
+    position: absolute;
+    align: left;
+}
+.currents{
+    width: auto;
+    height: auto;
+    margin-left: 328px;
+    margin-top: 53px;
+    
+
+}
+.dates{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+.column1{
+    width: auto;
+    height: auto;
+}
+.left{
+    width: 202px;
+    height: 154px;
+    margin-left: 357px;
+    background-color: green;
+    border-radius: 25px;
+}
+.actualtemp{
+    width: auto;
+    height: auto;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 0px;
+}
+.hightemps{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 0px;
+}
+.number1{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 12px;
+    position: absolute;
+}
+.number2{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 12px;
+    margin-left: 100px;
+    position: relative;
+}
+.feelslike{
+    width: 165px;
+    height: 35px;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    color: white;
+    text-align: left;
+    letter-spacing:  0px;
+    margin-top: 10px;
+    position: absolute;
+}
+.lowtemp{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    color: white;
+    text-align: left;
+    letter-spacing:  0px;
+    margin-top: 10px;
+    margin-left: 100px;
+    position: relative;
+}
+.number3{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    position: absolute;
+}
+.number4{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    margin-left: 100px;
+    position: relative;
+
+}
+.descriptday{
+    color: white;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 50px;
 }
