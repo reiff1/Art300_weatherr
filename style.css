@@ -182,17 +182,14 @@ div{
     margin-top: 23px;
     margin-left: 20px;
 }
-.suncloud{
-    width: 65px;
-    height: 49px;
-}
 .temp{
-    margin-top: 23px;
+    margin-top: 25px;
     font-family: source-sans-pro, sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 18px;
-    position: absolute;
+    margin-left: 20px;
+    position: relative;
 }
 .precip{
     width: 80px;
@@ -201,15 +198,14 @@ div{
     font-weight: 600;
     font-style: normal;
     font-size: 18px;
-    margin-top: 60px;
-    position: absolute;
-    align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
 }
 .currents{
     width: auto;
-    margin-left: 300px;
-    margin-top: 53px;
-
+    margin-left: 520px;
+    margin-top: 30px;
 }
 .dates{
     width: auto;
@@ -219,79 +215,60 @@ div{
     font-size: 18px;
 }
 .column1{
-    width: auto;
-    height: auto;
+    display: grid;
+    grid-template: none;
+    grid-template-columns: 256px 240px 408px;
+    grid-template-rows: 256px;
+    margin-top: 0px;
+    margin-left: 513px;
+    border-radius: 35px;
 }
 .left{
-    width: 202px;
-    height: 154px;
-    margin-left: 320px;
-    background-color: green;
-    border-radius: 25px;
-    align-content: left;
+    display: grid;
+    grid-template: none;
+    grid-template-columns: 265px;
+    grid-template-rows: 154px 62px 122px 62px;
+    grid-row-gap: 15px;
+    border-radius: 35px;
+}
+.section1{
+    display: grid;
+    grid-template: none;
+    grid-template-columns: 102px 102px;
+    grid-template-rows: 123px;
+    grid-column-gap: 20px;
+    align-items: left;
+    position: absolute;
 }
 .actualtemp{
-    width: auto;
-    height: auto;
     font-family: source-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 10px;
+    font-size: 12px;
     color: white;
     letter-spacing: 0px;
+    margin-left: 0px;
+    margin-top: 8px;
     position: absolute;
-    margin-top: 20px;
-
-}
-.hightemps{
-    font-family: source-sans-pro, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 10px;
-    color: white;
-    letter-spacing: 0px;
-    margin-left: 115px;
-    padding-top: 20px;
 }
 .number1{
     font-family: source-sans-pro, sans-serif;
     font-weight: 800;
     font-style: normal;
     font-size: 40px;
+    margin-left: 0px;
+    margin-top: 30px;
     position: absolute;
-    align-content: top;
-}
-.number2{
-    font-family: source-sans-pro, sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 40px;
-    margin-left: 115px;
-    position: relative;
 }
 .feelslike{
-    width: 165px;
-    height: 35px;
     font-family: source-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 10px;
+    font-size: 12px;
     color: white;
-    text-align: left;
-    letter-spacing:  0px;
-    margin-top: 10px;
-    position: absolute;
-}
-.lowtemp{
-    font-family: source-sans-pro, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 10px;
-    color: white;
-    text-align: left;
-    letter-spacing:  0px;
-    margin-top: 10px;
-    margin-left: 115px;
+    letter-spacing: 0px;
+    margin-left: 0px;
+    margin-top: 100px;
     position: relative;
 }
 .number3{
@@ -299,6 +276,48 @@ div{
     font-weight: 800;
     font-style: normal;
     font-size: 40px;
+    margin-top:125px;
+    margin-left: 0px;
+    position: absolute;
+}
+.section2{
+    display: grid;
+    grid-template: none;
+    grid-template-columns: 102px 102px;
+    grid-template-rows: 123px;
+    grid-column-gap: 20px;
+    align-items: left;
+    position: absolute;
+}
+.hightemp{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 0px;
+    margin-top: 7px;
+    margin-left: 120px;
+    position: absolute;
+}
+.number2{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.lowtemp{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    color: white;
+    text-align: left;
+    letter-spacing:  0px;
+    margin-top: 100px;
+    margin-left: 115px;
     position: absolute;
 }
 .number4{
@@ -307,9 +326,11 @@ div{
     font-style: normal;
     font-size: 40px;
     margin-left: 115px;
-    position: relative;
+    position: absolute;
+    margin-top: 125px;
 
 }
+
 .descriptday{
     color: white;
     font-family: source-sans-pro, sans-serif;
@@ -323,7 +344,6 @@ div{
 .evening{
     width: 265px;
     height: 122px;
-    background-color: green;
     border-radius: 25px;
     margin-left: 0px;
     position: absolute;
