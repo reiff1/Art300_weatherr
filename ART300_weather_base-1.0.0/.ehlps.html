@@ -1,0 +1,231 @@
+<body>
+        <div class="results" id="app">
+            <input placeholder="Enter Your ZIP Code" v-on:input="zip_trigger" name="name" id="zip" />
+
+
+            <h1>TIME</h1>
+            <p v-bind:class="time.day">{{time.day}}</p>
+            <p class="date">{{time.date}}</p>
+            <p class="time">{{time.hour_12}}:{{time.minute}}:{{time.seconds}} {{time.ampm}}</p>
+            <p v-bind:class="time.moom">{{time.moom}}</p>
+
+            <h1>META</h1>
+            <p class="city">{{city}}</p>
+
+            <p class="zip">{{location.zip}}</p>
+            <p class="latitude">{{location.coord.lat}}</p>
+            <p class="longitude">{{location.coord.lon}}</p>
+            <p class="city">{{location.name}}</p>
+            <p class="state">{{location.state}}</p>
+
+            <p>{{error}}</p>
+
+            <h1>CURRENT</h1>
+            <p class="description">{{current.description_main}}</p>
+            <p class="description_long">{{current.description_long}}</p>
+            <p class="icon">{{current.description_icon}}</p>
+
+            <p class="degree_symbol current">{{current.temp.current}}</p>
+            <p class="degree_symbol high">{{current.temp.high}}</p>
+            <p class="degree_symbol low">{{current.temp.low}}</p>
+
+            <p class="degree_symbol feelslike">{{current.temp.feelslike}}</p>
+            <p class="windspeed">{{current.wind.speed}}</p>
+            <p class="cloudcover">{{current.cloud_cover}}</p>
+
+            <p class="rain">{{current.rain}}</p>
+            <p class="snow">{{current.snow}}</p>
+
+            <p class="pressure">{{current.pressure}}</p>
+            <p class="humidity">{{current.humidity}}</p>
+
+            <p class="sunrise">{{current.sunrise}}</p>
+            <p class="sunset">{{current.sunset}}</p>
+
+            <p class="uv">{{current.uv}}</p>
+            <p class="air_quality">{{current.air_quality}}</p>
+
+
+
+
+
+            <h1>HOURLY</h1>
+            <h4>Hour 1</h4>
+            <p>{{hourly[0].isDaytime ? 'Day' : 'Night' }}</p>
+            <p>{{hourly[0].time}}</p>
+            <p>{{hourly[0].number}}</p>
+            <p>{{hourly[0].shortForecast}}</p>
+            <p>{{hourly[0].startTime}}</p>
+            <p class="degree_symbol">{{hourly[0].temperature}}</p>
+            <p>{{hourly[0].temperatureTrend}}</p>
+            <p>{{hourly[0].windSpeed}}</p>
+            <p>{{hourly[0].windDirection}}</p>
+
+            <h1>FORECAST</h1>
+            <h4>Day 1</h4>
+            <h6>{{forecast[0].weekday}}</h6>
+            <p  class="degree_symbol">High - {{forecast[0].max_temp}}</p>
+            <p  class="degree_symbol">Low - {{forecast[0].min_temp}}</p>
+            <p>exmaple</p>
+            <p>{{ forecast[0].uv ? Math.round( forecast[0].uv ) : "" }}</p>
+            <p>{{ forecast[0].uv }}</p>
+            <p>{{ forecast[0].weather.description }}</p>
+
+            <p>{{forecast[0].description_icon}}</p>
+
+
+            <div class="icon">
+                <img v-bind:src="'/img/' + forecast[0].description_icon + '.png'" v-bind:alt="forecast[0].weather.description">
+            </div>
+
+            <div v-bind:class="'icon-'+forecast[0].description_icon"></div>
+
+            <p>{{forecast[0].wind_spd}} mph</p>
+            <p>{{forecast[0].wind_cdir_full}}</p>
+            <p>{{forecast[0].wind_cdir}}</p>
+
+            <p>{{forecast[0].vis}}</p>
+
+            <p>{{forecast[0].pop}}</p>
+
+            <p>{{forecast[0].precip}}</p>
+
+            <p>{{forecast[0].snow}}</p>
+
+            <p>{{forecast[0].dewpt}}</p>
+            <p>{{forecast[0].pres}} mb</p>
+
+            <div class="icon-01d"></div>
+            <div class="icon-02d"></div>
+            <div class="icon-03d"></div>
+            <div class="icon-04d"></div>
+            <div class="icon-09d"></div>
+            <div class="icon-10d"></div>
+            <div class="icon-11d"></div>
+            <div class="icon-13d"></div>
+            <div class="icon-50d"></div>
+
+
+        </div>
+        <div id="map"></div>
+
+
+        <script src="/js/script.js"></script>
+    </body>
+
+    <script src="/js/script.js" type="module"></script>
+</body>
+</html>
+<div class="results" id="app">
+    <div class="currentinfo">
+        <div class="current">
+            <div class="temp1">45º</div>
+            <div class="icon1">
+                <img src="/image/sunicon1.png" alt="sun1">
+            </div>
+        </div>
+        <h1>TIME</h1>
+        <div class="datetime">Monday, October 14th   9:48 PM</div>
+        <div class="searchbar">
+            <input placeholder="Enter Your ZIP Code" v-on:input="ziptest" name="name" id="zip"/>
+        </div>
+        <div class="locationinfo">
+            <p>Manhattan, Kansas 66502</p>
+        </div>
+        <div class="coordinates">
+            <p1>current location</p1>
+            <p2>39.1836° N, 96.5717° W</p2>
+        </div>
+    </div>
+</div>
+<div class="yourweek">
+    <h1>YOUR WEEK AT A GLANCE:</h1>
+</div>
+<div class="firstsection">
+    <div class="dailyalerts">
+        <div class="titles">DAILY ALERTS</div>
+        <div>-Light showers expected this evening.</div>
+        <div><br>- Hurricane Nestor to hit east coast by tomorrow evening.</div>
+    </div>
+    <div class="ataglance">
+        <div class="weekday">
+            <div class="day">Monday</div>
+            <div class="dailyicon">
+                <img src="/image/sunicon1.png" alt="sun2">
+            </div>
+            <div class="temps">62º/32º</div>
+            <div class="precip">P- 25%</div>
+        </div>
+        <div class="weekday">
+            <div class="day">Tuesday</div>
+            <div class="dailyicon">
+                <img src="/image/suncloudL.png" alt="suncloud">
+            </div>
+            <div class="temps">67º/37º</div>
+            <div class="precip">P- 12%</div>
+        </div>
+        <div class="weekday">
+            <div class="day">Wednesday</div>
+            <div class="dailyicon">
+                <img src="/image/raincloudL.png" alt="rain">
+            </div>
+            <div class="temps">53º/29º</div>
+            <div class="precip">P- 86%</div>
+        </div>
+        <div class="weekday">
+            <div class="day">Thursday</div>
+            <div class="dailyicon">
+                <img src="/image/sunrainL.png" alt="sunrain">
+            </div>
+            <div class="temps">73º/42º</div>
+            <div class="precip">P- 46%</div>
+        </div>
+        <div class="weekday">
+            <div class="day">Friday</div>
+            <div class="dailyicon">
+                <img src="/image/suncloudL.png" alt="suncloud">
+            </div>
+            <div class="temps">78º/51º</div>
+            <div class="precip">P- 32%</div>
+        </div>
+        <div class="weekday">
+            <div class="day">Saturday</div>
+            <div class="dailyicon">
+                <img src="/image/raincloudL.png" alt="raincloudL">
+            </div>
+            <div class="temps">68º.40º</div>
+            <div class="precip">P- 17%</div>
+        </div>
+        <div class="weekday">
+            <div class="day">Sunday</div>
+            <div class="dailyicon">
+                <img src="/image/sunicon1.png" alt="sun2">
+            </div>
+            <div class="temps">49º/23º</div>
+            <div class="precip">P- 76%</div>
+        </div>
+    </div>
+</div>
+<div class="currents">
+    <div class="dates">MONDAY, OCTOBER 14TH:</div>
+</div>
+<div class="column1">
+    <div class="left">
+        <div class="section1">
+            <div class="actualtemp">ACTUAL TEMP</div>
+            <div class="number1">49º</div>
+            <div class="feelslike">FEELS LIKE</div>
+            <div class="number3">46º</div>
+        </div>
+        <div class="section2">
+            <div class="hightemp">HIGH TEMP</div>
+            <div class="number2">62º</div>
+            <div class="lowtemp">LOW TEMP</div>
+            <div class="number4">36º</div>
+        </div>
+        <div class="description1">Sunny today. It's currently 45º. The high will be 60º</div>
+        <div class="tonight1">TONIGHT</div>
+        <div class="highlow1">55º/28º</div>
+        <div class="raincloud11"></div>
+    </div>
+</div>

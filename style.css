@@ -5,14 +5,6 @@ body, html{
     margin: 0;
     display: grid;
     overflow-x: hidden;
-
-}
-.degree_symbol:not(:empty)::after {
-    content: "°"
-}
-
-.owm-legend-item{
-    display: none;
 }
 
 #map {
@@ -39,27 +31,27 @@ body{
     height: 63px;
     margin-left: 56px;
     float: left;
-}
-.temp{
+} 
+.temp1{
     color: white;
     font-family: source-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 47px;
-    position: absolute;
+    float: left;
+    margin-top: -28px;
 }
 .icon1{
-    position: relative;
-    margin-left: 90px
+    margin-left: 100px;
+    margin-top: -28px;
 }
 .custominfo{
     width: 375px;
     height: 104px;
-    position: relative;
     margin-left: 1116px;
     color: white;
 }
-.datetime{
+.time.day{
     color: white;
     font-family: source-sans-pro, sans-serif;
     font-weight: 700;
@@ -77,14 +69,12 @@ body{
     font-size: 14px;
     margin-top: 8px;
     margin-left: 1175px;
-    position: absolute;
 }
 .locationinfo{
     width: 225px;
     height: 32px;
-    margin-top: 20px;
+    margin-top: -5px;
     margin-left: 1375px;
-    position: absolute;
 }
 p{
     font-family: source-sans-pro, sans-serif;
@@ -96,9 +86,8 @@ p{
 .coordinates{
     width: 225px;
     height: 12px;
-    position: relative;
     margin-left: 1375px;
-    margin-top: 52px;
+    margin-top: -15px;
 }
 p1{
     width: auto;
@@ -238,7 +227,6 @@ div{
     grid-template-rows: 123px;
     grid-column-gap: 20px;
     align-items: left;
-    position: absolute;
 }
 .actualtemp{
     font-family: source-sans-pro, sans-serif;
@@ -249,16 +237,15 @@ div{
     letter-spacing: 0px;
     margin-left: 0px;
     margin-top: 8px;
-    position: absolute;
 }
 .number1{
     font-family: source-sans-pro, sans-serif;
     font-weight: 800;
     font-style: normal;
     font-size: 40px;
-    margin-left: 0px;
+    margin-left: -108px;
     margin-top: 30px;
-    position: absolute;
+    float: left;
 }
 .feelslike{
     font-family: source-sans-pro, sans-serif;
@@ -268,26 +255,16 @@ div{
     color: white;
     letter-spacing: 0px;
     margin-left: 0px;
-    margin-top: 100px;
-    position: relative;
+    margin-top: -30px;
 }
 .number3{
     font-family: source-sans-pro, sans-serif;
     font-weight: 800;
     font-style: normal;
     font-size: 40px;
-    margin-top:125px;
-    margin-left: 0px;
-    position: absolute;
-}
-.section2{
-    display: grid;
-    grid-template: none;
-    grid-template-columns: 102px 102px;
-    grid-template-rows: 123px;
-    grid-column-gap: 20px;
-    align-items: left;
-    position: absolute;
+    margin-top: 0px;
+    margin-left: -108px;
+    float: left;
 }
 .hightemp{
     font-family: source-sans-pro, sans-serif;
@@ -295,10 +272,9 @@ div{
     font-style: normal;
     font-size: 12px;
     color: white;
-    letter-spacing: 0px;
-    margin-top: 7px;
     margin-left: 120px;
-    position: absolute;
+    float: left;
+    margin-top: -161px;
 }
 .number2{
     font-family: source-sans-pro, sans-serif;
@@ -306,7 +282,7 @@ div{
     font-style: normal;
     font-size: 40px;
     margin-left: 120px;
-    margin-top: 30px;
+    margin-top: -135px;
 }
 .lowtemp{
     font-family: source-sans-pro, sans-serif;
@@ -316,9 +292,9 @@ div{
     color: white;
     text-align: left;
     letter-spacing:  0px;
-    margin-top: 100px;
-    margin-left: 115px;
-    position: absolute;
+    margin-top: -76px;
+    margin-left: 100px;
+    float: left;
 }
 .number4{
     font-family: source-sans-pro, sans-serif;
@@ -326,8 +302,8 @@ div{
     font-style: normal;
     font-size: 40px;
     margin-left: 115px;
-    position: absolute;
-    margin-top: 125px;
+    margin-top: -46px;
+    float: left;
 
 }
 
@@ -344,16 +320,14 @@ div{
 .evening{
     width: 265px;
     height: 122px;
-    border-radius: 25px;
+    border-radius: 25px; 
     margin-left: 0px;
-    position: absolute;
 }
 .tonight{
     font-family: source-sans-pro, sans-serif;
     font-weight: 800;
     font-style: normal;
     font-size: 10px;
-    position: relative;
     margin-top: 15px;
 }
 .highlow{
@@ -361,13 +335,23 @@ div{
     font-weight: 800;
     font-style: normal;
     font-size: 36px;
-    position: absolute;
     margin-top: 15px;
 }
 .nighticon{
     margin-left: 175px;
     margin-top: 10px;
 }
-.eveningde{
-
+.description1{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 190px;
+}
+.tonight1{
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 100px;
 }
